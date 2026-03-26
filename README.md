@@ -31,7 +31,9 @@ Support Team
 ---
 
 ## 🔍 Attack Flow
+## 📊 Phishing Attack Flow Diagram
 
+![Attack Flow](Phishing Emai |Received.png)
 1. User receives phishing email  
 2. User clicks malicious link  
 3. Fake login page is displayed  
