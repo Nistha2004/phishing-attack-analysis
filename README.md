@@ -77,6 +77,20 @@ Support Team
 - Avoid clicking unknown links  
 
 ---
+## Impact Analysis
+
+- Unauthorized access to user accounts  
+- Data breaches involving sensitive information  
+- Credential reuse across multiple platforms  
+- Potential financial or reputational damage  
+
+## Mitigation Strategy
+
+- Implement Multi-Factor Authentication (MFA)  
+- Use advanced email filtering systems  
+- Conduct regular security awareness training  
+- Monitor login anomalies and suspicious activity  
+
 ## Tools and Concepts Used
 
 - Cybersecurity Fundamentals  
