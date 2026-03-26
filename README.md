@@ -1,11 +1,20 @@
 # Phishing Attack Analysis & Detection
 
-## 📌 Overview
+A beginner cybersecurity project focused on analyzing phishing attacks and understanding real-world threat detection techniques.
+
+## Overview
+This project analyzes a phishing attack scenario to identify social engineering techniques, Indicators of Compromise (IOCs), and methods for detection and prevention.
+
+## Sample Phishing Email
+
+Subject: Urgent: Verify Your Account Immediately
+
+##  Overview
 This project focuses on analyzing a phishing attack scenario to understand common social engineering techniques, identify Indicators of Compromise (IOCs), and explore detection and prevention strategies.
 
 ---
 
-## 📧 Sample Phishing Email
+##  Sample Phishing Email
 
 Subject: Urgent: Verify Your Account Immediately
 
@@ -20,7 +29,7 @@ Support Team
 
 ---
 
-## 🚩 Red Flags Identified
+##  Red Flags Identified
 
 - Suspicious sender domain  
 - Urgent and threatening language  
@@ -30,8 +39,8 @@ Support Team
 
 ---
 
-## 🔍 Attack Flow
-## 📊 Phishing Attack Flow Diagram
+##  Attack Flow
+##  Phishing Attack Flow Diagram
 
 ![Attack Flow](attack-flow.png.png)
 1. User receives phishing email  
@@ -42,7 +51,7 @@ Support Team
 
 ---
 
-## ⚠️ Indicators of Compromise (IOCs)
+##  Indicators of Compromise (IOCs)
 
 - Malicious domain: secure-login-update.com  
 - Suspicious email patterns  
@@ -51,7 +60,7 @@ Support Team
 
 ---
 
-## 🛡️ Detection Techniques
+##  Detection Techniques
 
 - Email filtering and spam detection  
 - URL inspection and validation  
@@ -60,7 +69,7 @@ Support Team
 
 ---
 
-## 🔐 Prevention Measures
+##  Prevention Measures
 
 - Enable Multi-Factor Authentication (MFA)  
 - Conduct user awareness training  
@@ -68,7 +77,13 @@ Support Team
 - Avoid clicking unknown links  
 
 ---
+## Tools and Concepts Used
 
-## 📊 Conclusion
+- Cybersecurity Fundamentals  
+- Threat Analysis  
+- Social Engineering  
+- Basic OSINT Concepts 
+
+##  Conclusion
 
 Phishing attacks exploit human behavior through social engineering. Proper awareness, detection mechanisms, and security practices can significantly reduce risks.
