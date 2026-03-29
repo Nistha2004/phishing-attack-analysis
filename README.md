@@ -1,7 +1,7 @@
 # Phishing Email Analysis – Gift Card Cancellation Scam
 
 ## 📌 Overview
-This project presents a practical analysis of a phishing email scenario involving a fake gift card purchase notification. The objective is to identify phishing indicators, analyze malicious elements, and understand how such attacks manipulate user behavior.
+This project presents a practical analysis of a phishing email scenario involving a fake gift card purchase notification. The objective is to identify phishing indicators, analyze malicious elements, and understand how such attacks manipulate user behavior.This attack demonstrates a combination of social engineering and initial access techniques commonly observed in real-world phishing campaigns.
 
 ---
 
@@ -16,6 +16,9 @@ The email claims that a gift card purchase has been made and urges the user to c
 ## ⚠️ Suspicious Indicators
 
 ![Suspicious Button](screenshotsbutton.png)
+
+## ⚠️ Suspicious Sender
+
 ![Suspicious Sender](screenshotssender.png)
 
 - Urgent call-to-action ("Cancel Order")
@@ -59,6 +62,9 @@ The use of redirection chains and spoofed sender identity indicates an attempt t
 The goal is to trick users into clicking malicious links and potentially entering sensitive information.
 
 ---
+###  Technical Observation
+
+The phishing email likely uses spoofed headers and deceptive domains to bypass basic email filtering mechanisms. The use of redirection chains indicates an attempt to evade detection systems and obscure the final malicious destination.
 
 ## 🛡️ Mitigation Strategies
 
@@ -68,6 +74,7 @@ The goal is to trick users into clicking malicious links and potentially enterin
 - Use email filtering systems  
 
 ---
+## Flowchart
 ![Flowchart](phishing_flowchart.png)
 
 ##  Tools Used
