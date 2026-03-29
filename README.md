@@ -68,6 +68,7 @@ The goal is to trick users into clicking malicious links and potentially enterin
 - Use email filtering systems  
 
 ---
+![Flowchart](phishing_flowchart.png)
 
 ##  Tools Used
 
