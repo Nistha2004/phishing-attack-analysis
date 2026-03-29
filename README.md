@@ -7,7 +7,7 @@ This project presents a practical analysis of a phishing email scenario involvin
 
 ## 📧 Phishing Email Sample
 
-![Email Screenshot](screenshots/email.png)
+![Email Screenshot](screenshotsemail.png)
 
 The email claims that a gift card purchase has been made and urges the user to cancel the order if unauthorized.
 
@@ -15,7 +15,8 @@ The email claims that a gift card purchase has been made and urges the user to c
 
 ## ⚠️ Suspicious Indicators
 
-![Suspicious Button](screenshots/button.png)
+![Suspicious Button](screenshotsbutton.png)
+![Suspicious Sender](screenshotssender.png)
 
 - Urgent call-to-action ("Cancel Order")
 - Fear-based message (unauthorized transaction)
