@@ -1,103 +1,87 @@
-# Phishing Attack Analysis & Detection
+# Phishing Email Analysis – Gift Card Cancellation Scam
 
-A beginner cybersecurity project focused on analyzing phishing attacks and understanding real-world threat detection techniques.
-
-## Overview
-This project analyzes a phishing attack scenario to identify social engineering techniques, Indicators of Compromise (IOCs), and methods for detection and prevention.
-
-## Sample Phishing Email
-
-Subject: Urgent: Verify Your Account Immediately
-
-##  Overview
-This project focuses on analyzing a phishing attack scenario to understand common social engineering techniques, identify Indicators of Compromise (IOCs), and explore detection and prevention strategies.
+## 📌 Overview
+This project presents a practical analysis of a phishing email scenario involving a fake gift card purchase notification. The objective is to identify phishing indicators, analyze malicious elements, and understand how such attacks manipulate user behavior.
 
 ---
 
-##  Sample Phishing Email
+## 📧 Phishing Email Sample
 
-Subject: Urgent: Verify Your Account Immediately
+![Email Screenshot](screenshots/email.png)
 
-Dear User,
-
-Your account has been temporarily suspended due to suspicious activity. Please verify your account within 24 hours to avoid permanent suspension.
-
-Click here to verify: http://secure-login-update.com
-
-Thank you,  
-Support Team
+The email claims that a gift card purchase has been made and urges the user to cancel the order if unauthorized.
 
 ---
 
-##  Red Flags Identified
+## ⚠️ Suspicious Indicators
 
-- Suspicious sender domain  
-- Urgent and threatening language  
-- Unverified external link  
-- Generic greeting ("Dear User")  
-- No official company branding  
+![Suspicious Button](screenshots/button.png)
 
----
-
-##  Attack Flow
-##  Phishing Attack Flow Diagram
-
-![Attack Flow](attack-flow.png.png)
-1. User receives phishing email  
-2. User clicks malicious link  
-3. Fake login page is displayed  
-4. User enters credentials  
-5. Attacker captures sensitive data  
+- Urgent call-to-action ("Cancel Order")
+- Fear-based message (unauthorized transaction)
+- Suspicious sender identity
+- Mismatch between sender email and claimed organization (spoofing)
+- Possible spoofing of a trusted brand
 
 ---
 
-##  Indicators of Compromise (IOCs)
+## 🔍 Link / URL Analysis
 
-- Malicious domain: secure-login-update.com  
-- Suspicious email patterns  
-- Unexpected login activity  
-- Unknown IP access  
+The URL associated with the "Cancel Order" button was analyzed using WhereGoes to track redirections.
 
----
-
-##  Detection Techniques
-
-- Email filtering and spam detection  
-- URL inspection and validation  
-- Domain reputation analysis  
-- Monitoring unusual login behavior  
+### Findings:
+- The link redirects through multiple URLs before reaching the final destination
+- The final domain does not match the claimed organization
+- Indicates a phishing redirection chain used to hide the malicious destination
 
 ---
 
-##  Prevention Measures
+## 🧠 Indicators of Compromise (IOCs)
 
+- Suspicious URL/domain  
+- Deceptive transaction message  
+- Action-driven phishing button  
+- Spoofed sender email  
+
+---
+
+##  Attack Analysis
+
+This attack uses **social engineering techniques**, specifically:
+
+- Urgency ("cancel immediately")
+- Financial fear (unauthorized purchase)
+- Trust exploitation (branding)
+
+The use of redirection chains and spoofed sender identity indicates an attempt to bypass basic detection mechanisms and increase credibility.
+
+The goal is to trick users into clicking malicious links and potentially entering sensitive information.
+
+---
+
+## 🛡️ Mitigation Strategies
+
+- Avoid clicking links from unknown emails  
+- Verify transactions through official websites  
 - Enable Multi-Factor Authentication (MFA)  
-- Conduct user awareness training  
-- Use secure email gateways  
-- Avoid clicking unknown links  
+- Use email filtering systems  
 
 ---
-## Impact Analysis
 
-- Unauthorized access to user accounts  
-- Data breaches involving sensitive information  
-- Credential reuse across multiple platforms  
-- Potential financial or reputational damage  
+##  Tools Used
 
-## Mitigation Strategy
+- WhereGoes  
+- OSINT techniques  
+- Phishing analysis (TryHackMe lab)
 
-- Implement Multi-Factor Authentication (MFA)  
-- Use advanced email filtering systems  
-- Conduct regular security awareness training  
-- Monitor login anomalies and suspicious activity  
+---
 
-## Tools and Concepts Used
+##  Key Learning
 
-- Cybersecurity Fundamentals  
-- Threat Analysis  
-- Social Engineering  
-- Basic OSINT Concepts 
+This analysis demonstrates how phishing attacks combine technical deception (spoofing, redirection) with psychological manipulation (urgency, fear) to increase success rates.
 
-##  Conclusion
+---
 
-Phishing attacks exploit human behavior through social engineering. Proper awareness, detection mechanisms, and security practices can significantly reduce risks.
+## ✅ Conclusion
+
+This project demonstrates how phishing attacks exploit urgency and fear to manipulate user actions. Through practical analysis, key indicators such as sender mismatch and redirection chains were identified, reflecting real-world SOC analyst responsibilities.
